@@ -70,6 +70,42 @@
         .mt-23 {
             margin-top: 23px;
         }
+       /* #profile>div:nth-child(3){
+            display: none;
+        }*/
+        .bars{
+            display: none;
+        }
+        @media  screen and (max-width:650px) {
+           #navs{
+            display: none;
+           }
+           #profile .direction1{
+            display: none;
+           }
+           #profile .direction2{
+            display: none;
+           }
+           #profile .direction3{
+            display: none;
+           }
+           #search{
+            width: 80%;
+           }
+           #profile .bars{
+            display: block;
+            width: 20%;
+           }
+           #profile .bars i{
+            font-size: 2rem;
+           }
+           #logo{
+            width: 100px;
+           }
+
+        }
+        
+
     </style>
 </head>
 
@@ -96,9 +132,12 @@
             </div>
             <div id="profile">
 
-                <div class="direction"><i class="fa-regular fa-user"></i></br>profile</div>
-                <div><i class="fa-regular fa-heart"></i></br>wishlist</div>
-                <div><i class="fa-solid fa-bag-shopping"></i></br>bag</div>
+                <div class="direction1"><i class="fa-regular fa-user"></i></br>profile</div>
+                <div class="direction2"><i class="fa-regular fa-heart"></i></br>wishlist</div>
+                <div class="direction3"><i class="fa-solid fa-bag-shopping"></i></br>bag</div>
+                <div class="bars">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
              </div>
          </div>
      </div>

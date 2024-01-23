@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day18</title>
+    <style>
+        #mydiv{
+            width: 100%;
+            border: 2px solid blue;
+            display: flex;
+            justify-content: space-around;
+            font-size: 50px;
+            text-align: center;
+        }
+        #mydiv>div{
+            border: 5px solid bisque;
+            width: 20%;
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+
+        }
+        .mychilddiv{
+            border: 3px solid greenyellow;
+        }
+        @media screen and (max-width:650px) {
+             #mydiv>div{
+             border: 5px solid black; 
+             flex-direction: column ;
+             }
+        }
+    </style> 
+</head>
+<body>
+    <div id="mydiv">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+         <div class="mychilddiv">4.1</div>
+         <div class="mychilddiv">4.2</div>
+         <div class="mychilddiv">4.3</div>
+         <div class="mychilddiv">4.4</div>
+    
+    </div>
+</body>
+</html>
