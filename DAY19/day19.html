@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day19t</title>
+    <style>
+        .m-div{
+         border: 2px solid green;  
+         height: 600px;
+         display: flex;
+         justify-content: center; 
+         align-items: center;
+         width: 50%;
+        }
+       .m-nav{
+        height: 60px;
+        border: 2px solid blue;
+        display: flex;
+        justify-content: space-around;
+        font-size: 35px;
+       } 
+       .dis-none{
+        display: none;
+       }
+       @media screen  and (max-width : 1000px){
+        .dis-none-pro{
+            display: none;
+        }
+        .dis-none{
+            display:block;
+        }
+       }
+
+    </style>
+</head>
+<body>
+    <div class="m-div">
+        <p>vertically center</p>
+    </div>
+    <div class="m-nav">
+        <div>logo</div>
+        <div class="dis-none-pro">profile</div>
+        <div class="dis-none">bars</div>
+    </div>
+    
+</body>
+</html>
